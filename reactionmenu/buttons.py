@@ -308,7 +308,8 @@ class ViewButton(discord.ui.Button, _BaseButton):
 		return cls(style=discord.ButtonStyle.link, label=str(label), url=str(url))
 	
 	@classmethod
-	def back(cls) -> ViewButton:
+	def back(cls, style = discord.ButtonStyle.gray,
+		label = 'Black') -> ViewButton:
 		"""|class method|
 		
 		A factory method that returns a :class:`ViewButton` with the following parameters set:
