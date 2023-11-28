@@ -309,7 +309,7 @@ class ViewButton(discord.ui.Button, _BaseButton):
 	
 	@classmethod
 	def back(cls, style = discord.ButtonStyle.gray,
-		label = 'Black') -> ViewButton:
+		label = 'Back') -> ViewButton:
 		"""|class method|
 		
 		A factory method that returns a :class:`ViewButton` with the following parameters set:
@@ -318,7 +318,7 @@ class ViewButton(discord.ui.Button, _BaseButton):
 		- label: "Back"
 		- custom_id: :attr:`ViewButton.ID_PREVIOUS_PAGE`
 		"""
-		return cls(style=discord.ButtonStyle.gray, label='Back', custom_id=cls.ID_PREVIOUS_PAGE)
+		return cls(style=style, label=label, custom_id=cls.ID_PREVIOUS_PAGE)
 	
 	@classmethod
 	def next(cls) -> ViewButton:
